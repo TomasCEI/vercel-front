@@ -6,6 +6,8 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
+  const nombre = import.meta.env.VITE_NOMBRE || 'Mundo'
+
   return (
     <>
       <div>
@@ -16,8 +18,19 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
-      <img src="/gatito.jpg" />
+
+     
+      <h1>Hola <b>{nombre}</b></h1>
+      <small> Variable de entorno ("Hola Mundo" para no encontrada)</small>
+
+      <div>
+        <img src="/gatito.jpg" /><br />
+        <small>Archivo de carpeta public FRONT</small>
+      </div>
+
+
+     
+
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
