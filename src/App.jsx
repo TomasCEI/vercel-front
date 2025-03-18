@@ -20,12 +20,13 @@ function App() {
       </div>
 
      
-      <h1>Hola <b>{nombre}</b></h1>
+      <h1>Hola {nombre}</h1>
       <small> Variable de entorno ("Hola Mundo" para no encontrada)</small>
 
       <div>
         <img src="/gatito.jpg" /><br />
-        <small>Archivo de carpeta public FRONT</small>
+        <img src="/gatito.jpg" /><br />
+        <small>Archivo de carpeta public FRONTTTTTTT</small>
       </div>
 
 
